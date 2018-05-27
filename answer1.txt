@@ -51,4 +51,4 @@ This if statement will check if the looping is 0, but too late.  By the time loo
 HINT:
 There are 2 lines to change, you should copy and paste their position to a different place
 
-If you need the answer: [insert link]
+If you need the answer: https://github.com/AvinciClubNJ/testproj1/blob/warren_avinci_proj1/realanswer1
