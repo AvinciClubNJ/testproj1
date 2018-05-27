@@ -1,0 +1,54 @@
+If you had trouble, use this.  If you accidently clicked on this, don't scroll down.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ok, so your current code looks like this:
+
+    elif givemoney == True:
+        if looping == 0:
+            givemoney = False
+        print(names)
+        names[transactions[i]] += amounttoadd 
+        looping -= 1
+
+This if statement will check if the looping is 0, but too late.  By the time looping is equal to 0, then the statement will loop once again and make it a pain.
+
+HINT:
+There are 2 lines to change, you should copy and paste their position to a different place
+
+If you need the answer: [insert link]
