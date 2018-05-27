@@ -1,0 +1,38 @@
+So here are the steps you will need to finish your python program(gift1):
+
+Your program currently has a bug.  When givemoney == True:, this adds money to the people next(as it should), but it has the following bug:
+For example, when you want to add money to three people, the program is kind of like this:
+
+check for looping:
+  (it is not 0)
+  
+add to the person.
+
+looping -= 1 (looping is currently 3, after this statement it is 2)
+...
+check for looping:
+  (it is not 0)
+  
+add to the person.
+
+looping -= 1 (looping is currently 2, after this statement it is 1)
+...
+check for looping:
+  (it is not 0)
+
+add to the person.
+
+looping -= 1 (looping is currently 1, after this statement it is 0)
+
+THIS IS THREE TIMES ALREADY, BUT CHECK DOES NOT REALIZE:
+(here we go again)
+
+check for looping:
+  (its 0, but it doesn't stop as the if statement has already ran)
+
+add to the person.
+
+looping -= 1 (looping is currently 0, after this statement it is -1)
+
+Now it will finally stop.  However, this has ran 4 times, and it has added this money the next person(which was trying to do a transaction)
+answerkey = [insert link]
