@@ -1,0 +1,8 @@
+    elif givemoney == True:
+        names[transactions[i]] += amounttoadd 
+        looping -= 1
+        if looping == 0:
+            givemoney = False
+ 
+ 
+This makes the code check after looping has changed.  This will make the code only loop 3 times rather than 4.
