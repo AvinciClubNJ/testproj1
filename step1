@@ -1,7 +1,7 @@
 So here are the steps you will need to finish your python program(gift1):
 
 Your program currently has a bug.  When givemoney == True:, this adds money to the people next(as it should), but it has the following bug:
-For example, when you want to add money to three people, the program is kind of like this:
+For example, when you want to add money to three people, the program is runs as the following steps:
 
 check for looping:
   (it is not 0)
