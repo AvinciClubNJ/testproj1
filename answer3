@@ -1,0 +1,11 @@
+order = []
+
+with open('gift1.in') as fin: 
+    num = int(fin.readline())
+    for _ in range(num):
+        order.append(fin.readline().rstrip())
+    rawtransactions = fin.readlines()
+transactions = []
+names = {i: 0 for i in order}
+...
+Ask me in class if you are confused.
