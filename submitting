@@ -1,0 +1,28 @@
+I'm going to make this really straight-forward for you:
+We have a dictionary named "names", but we don't have the order.  QUOTE:
+"
+The names should be printed in the same order they appear starting on line 2 of the input.
+"
+The only problem is that dictionaries don't have orders.  Lists do.
+
+Your code:
+names = {}
+
+with open('gift1.in') as fin: 
+    num = int(fin.readline())
+    for _ in range(num):
+        names[fin.readline().rstrip()] = 0
+    rawtransactions = fin.readlines()
+    
+You need to replace names with a list called order(or something else), and then make a dictionary off that list.
+
+Pretty much, just change the dictionary adding on things to a list.  After that, use this code to make the dictoinary:
+names = {i: 0 for i in order}
+
+Confused?
+Use this link --> [insert] <--
+When you print out your answer, just us this(assuming you made the list's name order and the dictionary's name names):
+
+with open('gift1.out', 'w') as fout:
+    for i in order:
+        print('%s %d' % (i, names[i]), file=fout)
