@@ -43,4 +43,10 @@ If you didn't mean to click on this, x out.  Else, scroll down:
 
 
 
-Ok, so you should make a variable named 
+Ok, so you should make a variable named amounttoaddback(or something along those lines.)  If you could recall, we made our amount to add like the following:
+ amounttoadd = int(transactions[i][0]/transactions[i][1])
+For dave's case, this will add $66 to 3 people.  The equation is 200/6 = 66.66666666666666666666666666.  Since we used int(), that just makes the number 66.  Meanwhile, 66 * 3 = 198, with 2 left over.  We can also get this 2 to return to dave by using this:
+200 % 3 = 2
+We just need the same numbers, but just change the slash to a modulo!
+After this, we will just have to add it back.
+Complete answer:
