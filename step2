@@ -12,6 +12,8 @@ First, 'dave' splits 200 among 'laura', 'owen', and 'vick'. That comes to 66 eac
 -198	66	66	66	0
 
 As you can see, dave had 2 dollars left over, and that had to be refunded to him.  We don't have this in our code yet.
+After this, we will just have to add it to dave.
 ***IMPORTANT***
 For this step use the modulo(%) sign.  For example 8 % 3 = 2 as 2*3 = 6 and 6 + 2 = 8(basically 2 is the remainder of the equation)
 Are you having trouble?
+https://github.com/AvinciClubNJ/testproj1/blob/warren_avinci_proj1/answer2
