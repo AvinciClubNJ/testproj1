@@ -1,0 +1,22 @@
+Previous code:
+        names[name] -= transactions[i][0]
+        if transactions[i][1] != 0:
+            amounttoadd = int(transactions[i][0]/transactions[i][1])
+        else:
+            amounttoadd = 0
+        looping = transactions[i][1]
+        givemoney = True
+New Code:
+        if transactions[i][1] != 0:
+            amounttoadd = int(transactions[i][0]/transactions[i][1])
+            amounttoaddback = transactions[i][0]%transactions[i][1]
+        else:
+            amounttoadd = 0
+            amounttoaddback = 0
+        names[name] -= transactions[i][0]-amounttoaddback  #THIS WILL ONLY SUBTRACT 198, AS 200-2=198.
+        looping = transactions[i][1]
+        if looping != 0:
+            givemoney = True
+        continue
+With this code, you will get the varible amounttoaddback, and that will subtract this, another way you could have done it was to subtract 200 from dave, and then add 2.
+Also, notice how in the else statement, I had set amount to add back to 0.
