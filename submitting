@@ -20,9 +20,10 @@ Pretty much, just change the dictionary adding on things to a list.  After that,
 names = {i: 0 for i in order}
 
 Confused?
-Use this link --> [insert] <--
+Use this link --> https://github.com/AvinciClubNJ/testproj1/blob/warren_avinci_proj1/answer3 <--
 When you print out your answer, just us this(assuming you made the list's name order and the dictionary's name names):
 
 with open('gift1.out', 'w') as fout:
     for i in order:
         print('%s %d' % (i, names[i]), file=fout)
+Ask me in class for more information.
